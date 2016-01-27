@@ -5,7 +5,7 @@ const TelegramBot = require('node-telegram-bot-api');
 
 const token = process.env.configToken;
 
-const bot = new TelegramBot(config.token, {polling: true});
+const bot = new TelegramBot(token, {polling: true});
 
 bot.on('inline_query', msg => {
     const input = msg.query;
