@@ -3,7 +3,7 @@
 // const config = require('./config');
 const TelegramBot = require('node-telegram-bot-api');
 
-const token = ENV['configToken']
+const token = process.env.configToken;
 
 const bot = new TelegramBot(config.token, {polling: true});
 
