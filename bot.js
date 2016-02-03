@@ -1,9 +1,9 @@
 'use strict';
 
-// const config = require('./config');
+const config = require('./config');
 const TelegramBot = require('node-telegram-bot-api');
 
-const token = process.env.configToken;
+const token = config.token;
 
 const bot = new TelegramBot(token, {polling: true});
 
